@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Compra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Confirmación de Compra</h1>
+    </header>
+
+    <section id="confirmarCompra">
+        <h2>Revisa y modifica tu carrito</h2>
+        <div id="cartItems"></div>
+        <p>Total Final: <span id="totalPrice">0</span>€</p>
+        <button id="finalizarCompra">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Carrito de Compras</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const finalizarCompraBtn = document.getElementById('finalizarCompra');
+
+            finalizarCompraBtn.addEventListener('click', () => {
+                alert('Compra finalizada con éxito!');
+                // Aquí podrías limpiar el carrito y redirigir al usuario a una página de agradecimiento o similar
+            });
+        });
+    </script>
+</body>
+</html>

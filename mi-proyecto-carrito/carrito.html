@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cart.js" defer></script>
+    <script src="js/geolocation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <section id="productos">
+        <h2>Arrastra los productos a la cesta</h2>
+        <img src="images/producto1.jpg" alt="Producto 1" class="draggable" data-name="Producto 1" data-price="10">
+        <img src="images/producto2.jpg" alt="Producto 2" class="draggable" data-name="Producto 2" data-price="20">
+        <img src="images/producto3.jpg" alt="Producto 3" class="draggable" data-name="Producto 3" data-price="30">
+    </section>
+
+    <section id="carrito">
+        <h2>Tu Cesta</h2>
+        <div id="dropzone">
+            <p>Arrastra aquí los productos</p>
+        </div>
+        <div id="cartItems"></div>
+        <p>Total: <span id="totalPrice">0</span>€</p>
+    </section>
+
+    <section id="geolocation">
+        <h2>Ubicación</h2>
+        <p>Tu compra se realizará desde: <span id="location"></span></p>
+    </section>
+
+    <footer>
+        <a href="confirmacion.html">Confirmar Compra</a>
+    </footer>
+</body>
+</html>
